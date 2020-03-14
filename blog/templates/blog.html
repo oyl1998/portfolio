@@ -47,8 +47,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <!-- 
-    	<link href="album.css" rel="stylesheet"> -->
+    
   </head>
   <body>
     <header>
@@ -96,7 +95,7 @@
   </section>
   <div class="container">
   	{% for blog in blogs.all %}
-	<h2><a href="#">{{ blog.title }}</a></h2>
+	<h2><a href="{{ blog.id }}">{{ blog.title }}</a></h2>
 	{{ blog.date }}
 	<br>
 	<img src="{{ blog.image.url }}" height="200px">
